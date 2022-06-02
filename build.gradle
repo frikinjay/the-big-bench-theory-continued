@@ -51,8 +51,8 @@ dependencies {
 
     // TODO when KubeJS hits 1.18
     // KubeJS Integration
-    // modImplementation "curse.maven:kubejs-${project.kubejs_project}:${project.kubejs_file}"
-    // modImplementation "curse.maven:architectury-api-${project.architectury_project}:${project.architectury_file}"
+    modImplementation "curse.maven:kubejs-${project.kubejs_project}:${project.kubejs_file}"
+    modImplementation "curse.maven:architectury-api-${project.architectury_project}:${project.architectury_file}"
 }
 
 processResources {
