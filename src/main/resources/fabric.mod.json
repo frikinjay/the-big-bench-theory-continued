@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "bigbenchtheory",
+  "version": "${version}",
+
+  "name": "The Big Bench Theory",
+  "description": "I like big benches and I cannot lie.\nAdds new crafting tables of varying sizes.",
+  "authors": [
+    "Platymemo",
+    "frikinjay"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Platymemo/the-big-bench-theory",
+    "sources": "https://github.com/Platymemo/the-big-bench-theory",
+    "issues": "https://github.com/Platymemo/the-big-bench-theory/issues"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/bigbenchtheory/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.platymemo.bigbenchtheory.BigBenchTheory"
+    ],
+    "client": [
+      "com.github.platymemo.bigbenchtheory.BigBenchTheoryClient"
+    ],
+    "rei_plugins": [
+      "com.github.platymemo.bigbenchtheory.compat.rei.plugin.MegaCraftingClientPlugin",
+      "com.github.platymemo.bigbenchtheory.compat.rei.plugin.MegaCraftingPlugin"
+    ]
+  },
+  "mixins": [
+    "bigbenchtheory.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x"
+  },
+  "suggests": {
+    "nbtcrafting": "*"
+  }
+}
